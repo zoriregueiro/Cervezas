@@ -17,7 +17,9 @@ const Beers = () => {
     setFilter((searchParams.get("query") || "").toUpperCase());
     const loadData = ()=> loadBeers();
     loadData();
+     // eslint-disable-next-line
   }, []);
+ 
 
   const filterData = (e) => {
     setFilter(e.target.value.toUpperCase());

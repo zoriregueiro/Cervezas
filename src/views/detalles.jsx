@@ -4,6 +4,7 @@ import { getBeer } from "../sevices";
 
 function Detalles() {
   const { id } = useParams();
+   // eslint-disable-next-line
   const navigate = useNavigate();
   const [beer, setBeer] = useState({});
 
