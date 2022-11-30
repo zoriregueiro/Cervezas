@@ -1,0 +1,7 @@
+{
+    "prettier.endOfLine": "auto",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": true,
+    "prettier.htmlWhitespaceSensitivity": "strict"
+}
