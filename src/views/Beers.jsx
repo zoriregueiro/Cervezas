@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { getBeers } from "../sevices";
 import { useNavigate } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
+import "./Beers.css";
 
 
 
