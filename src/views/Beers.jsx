@@ -3,8 +3,7 @@ import { getBeers } from "../sevices";
 import { useNavigate } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
 import "./Beers.css";
-
-
+import Header from "./Header";
 
 
 const Beers = () => {
@@ -43,6 +42,8 @@ const Beers = () => {
   }
 
   return (
+    <div>
+      <Header></Header>
     <div className="beer">
       <input
         className="toolBar"
@@ -65,8 +66,10 @@ const Beers = () => {
             </div>
           ))}
       </div>
-    </div>
+      </div>
+      </div>
   );
 };
 
 export default Beers;
+
