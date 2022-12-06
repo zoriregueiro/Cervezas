@@ -4,12 +4,10 @@
   box-sizing: border-box;
 }
 
-body{
-  background-image: url("../imagenes/Splash\ screen.png");
-
-}
 .home {
 align-items: center;
+background-image: url("../imagenes/Splash\ screen.png");
+
   } 
 
 .home > button{
