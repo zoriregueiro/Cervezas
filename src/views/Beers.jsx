@@ -55,13 +55,7 @@ return (
   <img className="menu" src={menu} alt="icono menu" />
   </header>
   <div className="beer">
-    <input
-      className="toolBar"
-      placeholder="Search here"
-      type="text"
-      onChange={filterData}
-      value={filter}
-    ></input>
+   
     <div className="flex">
       {beers
         .filter((beer) => beer.filterName.includes(filter))

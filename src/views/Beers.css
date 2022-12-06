@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -24,17 +30,17 @@ margin: 6rem;
 width: 4%;
 }
 
-
 .toolBar {
 display: flex;
 flex-direction: row;
 align-items: center;
 padding: 8px 32px;
 gap: 16px;
-
 width: 463px;
 height: 45px;
+background-color: white;
 }
+
 .toolBar::placeholder {
   border: none;
   font-size: 1.2rem;
