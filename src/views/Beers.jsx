@@ -55,7 +55,13 @@ return (
   <img className="menu" src={menu} alt="icono menu" />
   </header>
   <div className="beer">
-   
+      <div className="first">
+        <div className="title">
+        <h1>Beer Museum</h1>
+        <h2>Live de beer experience in Coruña</h2>
+        </div>
+
+   </div>
     <div className="flex">
       {beers
         .filter((beer) => beer.filterName.includes(filter))

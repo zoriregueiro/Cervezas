@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router";
 import NotFound from "./views/NotFound";
 import Detalles from "./views/detalles";
 import HomePage from "./views/HomePage";
-// import Header from "./views/Header";
+
 
 
 

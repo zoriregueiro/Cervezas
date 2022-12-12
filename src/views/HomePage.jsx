@@ -12,7 +12,7 @@ function HomePage() {
     navigate(path);
   }
   return (
-  <div className="home">
+    <div id="home" className="fullScreen">
 <img src={logo} alt="logo marga" />
 <button type="button" onClick={routeChange}> Start experience </button>
 
