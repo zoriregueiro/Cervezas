@@ -163,3 +163,58 @@ height: 208px;
 position: relative;
 top: 5px;
 }
+
+.recipes {
+position: relative;
+width: 100vw;
+height: 1000px;
+background-image: url("../../public/images/Recetas.png");
+background-repeat: no-repeat;
+margin-top: 4rem;
+}
+
+.textRecipes{
+position: absolute;
+width: 500px;
+height: 200px;
+left: 120px;
+top: 140px;
+}
+
+.textRecipes > h2 {
+    font-family: 'Utopia Std';
+font-style: normal;
+font-weight: 600;
+font-size: 60px;
+line-height: 77px;
+color: #FFFFFF;
+}
+
+.textRecipes > h3{
+font-family: 'Cabin';
+font-style: normal;
+font-weight: 400;
+font-size: 29px;
+line-height: 39px;
+color: #FFFFFF;
+}
+
+.textRecipes > button {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 24px 32px;
+gap: 10px;
+position: absolute;
+width: 200px;
+height: 68px;
+left: 0px;
+top: 377px;
+border-radius: 8px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 29px;
+}

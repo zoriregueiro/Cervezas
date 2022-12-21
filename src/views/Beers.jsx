@@ -17,7 +17,7 @@ useEffect(() => {
 setFilter((searchParams.get("query") || "").toUpperCase());
 const loadData = ()=> loadBeers();
 loadData();
-  // eslint-disable-next-line
+// eslint-disable-next-line
 }, []);
 
 
@@ -29,11 +29,11 @@ setSearchParams(searchParams);
 
 const loadBeers = async (e) => {
 try {
-  const beers = await getBeers();
+const beers = await getBeers();
 
-  setBeers(beers);
+setBeers(beers);
 } catch (error) {
-  console.error("error", e);
+console.error("error", e);
 }
 };
 
@@ -43,7 +43,7 @@ navigate("/beers/" + id);
 
 return (
 <div>
-  <header>
+<header>
 <img className="logo" src={logo} alt="imagen logo" />
 <input
 className="toolBar"
@@ -55,31 +55,38 @@ value={filter}
 <img className="menu" src={menu} alt="icono menu" />
 </header>
 <div className="beer">
-    <div className="first">
-      <div className="title">
-        <h1>Beer Museum</h1>
-        <h2>Live de beer experience in Coruña</h2>
-      </div>
-
+  <div className="first">
+    <div className="title">
+      <h1>Beer Museum</h1>
+      <h2>Live de beer experience in Coruña</h2>
     </div>
+
+  </div>
 <div className="flexTitle">
-  <h2>Discover our beers</h2>
-  <h3>Brewery tradition and innovation</h3>
+<h2>Discover our beers</h2>
+<h3>Brewery tradition and innovation</h3>
 </div>
 <div className="flex">        
-    {beers
-      .filter((beer) => beer.filterName.includes(filter))
-      .map((beer) => (
-        <div
-          className="container"
-          onClick={() => redirect(beer.id)}
-          key={beer.id}
-        >
-          <img alt={beer.name} src={beer.image_url} />
-          <div><p>{beer.name}</p> <p>{beer.tagline}</p></div>
-          
+{beers
+  .filter((beer) => beer.filterName.includes(filter))
+  .map((beer) => (
+    <div
+      className="container"
+      onClick={() => redirect(beer.id)}
+      key={beer.id}
+    >
+      <img alt={beer.name} src={beer.image_url} />
+      <div><p>{beer.name}</p> <p>{beer.tagline}</p></div>
+      
+  </div>
+))}
+  </div>
+      <div className="recipes">
+        <div className="textRecipes">
+          <h2>Discover recipes to challenge your senses</h2>
+          <h3>Ideal gastronomic experiences to accompany with beers.</h3>
+          <button type="buttom">View recipes</button>
         </div>
-      ))}
 </div>
 </div>
 </div>
