@@ -82,14 +82,35 @@ value={filter}
   </div>
   ))}
         {/* <button type="buttom">View products</button>  */}
-  </div>
-      <div className="recipes">
-        <div className="textRecipes">
-          <h2>Discover recipes to challenge your senses</h2>
-          <h3>Ideal gastronomic experiences to accompany with beers</h3>
-          <button type="buttom">View recipes</button>
-        </div>
 </div>
+<div className="recipes">
+  <div className="textRecipes">
+    <h2>Discover recipes to challenge your senses</h2>
+    <h3>Ideal gastronomic experiences to accompany with beers</h3>
+    <button type="buttom">View recipes</button>
+  </div>
+</div>
+      <div className="history">
+        <div className="textHistory">
+          <h2>Did you know...?</h2>
+          <h3>Interesting facts about beer</h3>
+        </div>
+        <div className="information">
+          <div className="barrel">
+            <img src="" alt="" />
+            <h2>Beer foam</h2>
+            <h3>What is taken into account when tasting?</h3>
+            <p>The more foam your cup or glass has, the more the contact of the liquid with the air will be avoided, and this serves so that the drink does not become oxygenated and does not lose gas as quickly.</p>
+          </div>
+          <div className="woman">
+            <img src="" alt="" />
+            <h2>The woman</h2>
+            <h3>The importance of women in the history of beer</h3>
+            <p>In the Roman Empire, women were in charge of production for the entire community. In England since medieval times, the "alewives" brewed the beer. The nun Hidelgara de Bingen wrote a compendium on the use of hops as a medicinal plant.</p>
+          </div>
+        </div>
+        <button type="buttom"></button>
+  </div>
 </div>
 </div>
 );
