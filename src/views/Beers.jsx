@@ -59,6 +59,7 @@ value={filter}
     <div className="title">
       <h1>Beer Museum</h1>
       <h2>Live de beer experience in Coruña</h2>
+      <button type="buttom">View products</button>
     </div>
 
   </div>
