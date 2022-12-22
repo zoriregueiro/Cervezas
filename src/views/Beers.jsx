@@ -80,12 +80,13 @@ value={filter}
       <div><p>{beer.name}</p> <p>{beer.tagline}</p></div>
       
   </div>
-))}
+  ))}
+        {/* <button type="buttom">View products</button>  */}
   </div>
       <div className="recipes">
         <div className="textRecipes">
           <h2>Discover recipes to challenge your senses</h2>
-          <h3>Ideal gastronomic experiences to accompany with beers.</h3>
+          <h3>Ideal gastronomic experiences to accompany with beers</h3>
           <button type="buttom">View recipes</button>
         </div>
 </div>
