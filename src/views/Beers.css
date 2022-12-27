@@ -511,7 +511,7 @@ color: #1D1E1C;
 box-sizing: content-box;
 display: flex;
 flex-direction: column;
-gap: 30px;
+gap: 40px;
 }
 
 .suscribe > h2 {
@@ -530,12 +530,20 @@ flex-direction: row;
 
 .toolSuscribe > input {
 padding: 1rem;
-width: 350px;
+width: 330px;
 height: 50px;
 border-width: 1px 0px 1px 1px;
 border-radius: 8px 0px 0px 8px;
 border-style: solid;
 border-color: #1D1E1C;
+}
+
+.toolSuscribe::placeholder {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 33px;
 }
 
 .toolSuscribe > button {
@@ -550,6 +558,11 @@ height: 50px;
 background: #1D1E1C;
 color: #FFFFFF;
 border-radius: 0px 8px 8px 0px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 33px;
 }
 
 .copyright > p {
