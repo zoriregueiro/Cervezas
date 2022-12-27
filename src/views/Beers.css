@@ -9,15 +9,12 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-
 gap: 24px;
-
 position: absolute;
 width: 100%;
 height: 80px;
 left: 0px;
 top: 0px;
-
 background: rgba(26, 26, 26, 0.95);
 }
 
@@ -264,7 +261,7 @@ line-height: 39px;
 box-sizing: content-box;
 display: flex;
 flex-direction: column;
-justify-content: center;
+align-items: center;
 }
 
 .information {
@@ -358,4 +355,210 @@ font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 19px;
+}
+
+.history > button {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin: 4rem 0;
+font-family: 'Montserrat';
+font-style: normal;
+font-size: 18px;
+line-height: 29px;
+color: #FFFFFF;
+padding: 24px 32px;
+width: 320px;
+height: 60px;
+background: #1D1E1C;
+border-radius: 8px;
+}
+
+.museum {
+position: relative;
+width: 100vw;
+height: 800px;
+background-image: url(../../public/images/Sección\ info.\ museo.png);
+background-repeat: no-repeat;
+margin-top: 4rem;
+}
+
+.textMuseum {
+position: absolute;
+width: 440px;
+height: 200px;
+left: 120px;
+top: 140px;
+}
+
+.textMuseum > h2 {
+font-family: 'Utopia Std';
+font-style: normal;
+font-weight: 600;
+font-size: 55px;
+line-height: 77px;
+color: #FFFFFF;
+}
+
+.textMuseum > h3 {
+margin-top: 1rem;
+font-family: 'Cabin';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 39px;
+color: #FFFFFF;
+}
+
+.textMuseum > button {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 24px 32px;
+gap: 10px;
+position: absolute;
+width: 220px;
+height: 58px;
+left: 0px;
+top: 377px;
+border-radius: 8px;
+border: none;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 29px;
+}
+
+.foot{
+width: 100%;
+height: 300px;
+}
+
+.footContent {
+margin-top: 1rem;
+box-sizing: content-box;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: flex-start;
+}
+
+.logos {
+box-sizing: content-box;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.bigLogo > img {
+margin-bottom: 1.5rem;
+width: 150px;
+}
+
+.smallLogos {
+width: 150px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.textFoot1 {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.textFoot1 > h2 {
+font-family: 'Cabin';
+font-style: normal;
+font-size: 28px;
+line-height: 40px;
+}
+
+.textFoot1 > p {
+font-family: 'Cabin';
+font-style: normal;
+font-size: 20px;
+line-height: 29px;
+color: #1D1E1C;
+}
+
+.textFoot2 {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.textFoot2 > h2 {
+font-family: 'Cabin';
+font-style: normal;
+font-size: 28px;
+line-height: 40px;
+}
+
+.textFoot2 > p {
+font-family: 'Cabin';
+font-style: normal;
+font-size: 20px;
+line-height: 29px;
+color: #1D1E1C;
+}
+
+.suscribe {
+box-sizing: content-box;
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+
+.suscribe > h2 {
+font-family: 'Cabin';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+color: #1D1E1C;
+}
+
+.toolSuscribe{
+display: flex;
+flex-direction: row;
+}
+
+.toolSuscribe > input {
+padding: 1rem;
+width: 350px;
+height: 50px;
+border-width: 1px 0px 1px 1px;
+border-radius: 8px 0px 0px 8px;
+border-style: solid;
+border-color: #1D1E1C;
+}
+
+.toolSuscribe > button {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 24px;
+gap: 10px;
+width: 200px;
+height: 50px;
+background: #1D1E1C;
+color: #FFFFFF;
+border-radius: 0px 8px 8px 0px;
+}
+
+.copyright > p {
+margin-top: 1.5rem;
+font-family: 'Cabin';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+text-align: center;
+color: #1D1E1C;
 }

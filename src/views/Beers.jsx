@@ -7,6 +7,8 @@ import logo from "../imagenes/Logo.png"
 import menu from "../imagenes/Menu.png"
 import barrel from "../imagenes/Barril.png"
 import fruit from "../imagenes/fruit.png"
+import facebookNegative from "../imagenes/facebookNegative.svg"
+import instagramNegative from "../imagenes/instagramNegative.png"
 
 const Beers = () => {
 const [beers, setBeers] = useState([]);
@@ -61,7 +63,7 @@ value={filter}
     <div className="title">
       <h1>Beer Museum</h1>
       <h2>Live de beer experience in Coruña</h2>
-      <button type="buttom">View products</button>
+      <button type="button">View products</button>
     </div>
 
   </div>
@@ -89,7 +91,7 @@ value={filter}
   <div className="textRecipes">
     <h2>Discover recipes to challenge your senses</h2>
     <h3>Ideal gastronomic experiences to accompany with beers</h3>
-    <button type="buttom">View recipes</button>
+    <button type="button">View recipes</button>
   </div>
 </div>
       <div className="history">
@@ -111,7 +113,55 @@ value={filter}
             <p>In the Roman Empire, women were in charge of production for the entire community. In England since medieval times, the "alewives" brewed the beer. The nun Hidelgara de Bingen wrote a compendium on the use of hops as a medicinal plant.</p>
           </div>
         </div>
-        <button type="buttom">Read more</button>
+        <button type="button">Read more</button>
+  </div>
+  <div className="museum">
+  <div className="textMuseum">
+    <h2>We are the second largest museum in Europe!</h2>
+    <h3>We are waiting for you at our facilities to discover the world of beer.</h3>
+    <button type="button">More information</button>
+  </div>
+  </div>
+  <div className="foot">
+    <div className="footContent">
+          <div className="logos">
+            <div className="bigLogo">
+              <img src={logo} alt="logo" />
+            </div>
+        <div className="smallLogos">
+              <img src={facebookNegative} alt="facebook" />
+              <img src={instagramNegative} alt="instagram" />
+        </div>
+          </div>
+          <div className="textFoot1">
+            <h2>Beer Museum</h2>
+            <p>Products</p>
+            <p>Recipes</p>
+            <p>Articles</p>
+            <p>About us</p>
+          </div>
+          <div className="textFoot2">
+            <h2>Politics</h2>
+            <p>Legal warning</p>
+            <p>Privacy policy</p>
+            <p>Cookies policy</p>
+          </div>
+          <div className="suscribe">
+            <h2>Subscribe to our newsletter</h2>
+            <div className="toolSuscribe">
+              <input
+              className="toolSuscribe"
+              placeholder="E-Mail"
+              type="text"
+              ></input>
+              <button type="button">Suscribe</button>
+      </div>
+          </div>
+         
+    </div>
+        <div className="copyright">
+          <p>© Copyright 2022 - Todos los derechos reservados</p>
+    </div>
   </div>
 </div>
 </div>
