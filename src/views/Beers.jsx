@@ -10,6 +10,15 @@ import fruit from "../imagenes/fruit.png"
 import facebookNegative from "../imagenes/facebookNegative.svg"
 import instagramNegative from "../imagenes/instagramNegative.png"
 
+const hide = () => {
+  var x = document.getElementById("divHide");
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
+}
+
 const Beers = () => {
 const [beers, setBeers] = useState([]);
 const [filter, setFilter] = useState("");
@@ -44,6 +53,7 @@ console.error("error", e);
 function redirect(id) {
 navigate("/beers/" + id);
 }
+
 
 return (
 <div>
@@ -83,10 +93,16 @@ value={filter}
       <img alt={beer.name} src={beer.image_url} />
       <div><p>{beer.name}</p> <p>{beer.tagline}</p></div>
       
-  </div>
+    </div>
   ))}
-        {/* <button type="buttom">View products</button>  */}
+<button onclick={hide}>View products</button>
 </div>
+{/* 
+<div id="divHide" style={width: 100vw;
+height: 1200px;background-color: #FFFFFF;}> </div> 
+   */}
+
+
 <div className="recipes">
   <div className="textRecipes">
     <h2>Discover recipes to challenge your senses</h2>
